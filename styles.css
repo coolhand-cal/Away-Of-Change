@@ -53,20 +53,6 @@ input, textarea{
 header {
     text-align: center;
 }
-.welcome h3 {
-    grid-column: 1/8;
-    text-align: center;
-    grid-row: 1;
-}
-.welcome-text {
-grid-row: 2;
-
-
-
-}
-.welcome-img {
-grid-row: 2;
-}
 
 
 .navLinks  li  {
@@ -95,6 +81,22 @@ h1,h3 {
     display: grid;
     grid-template-columns: repeat(8,1fr);
 
+}
+
+.welcome h3 {
+    grid-column: 1/8;
+    text-align: center;
+    grid-row: 1;
+}
+.welcome-text {
+grid-column: 1/8;
+grid-row: 3;
+
+}
+.welcome-img {
+grid-column: 3/8;
+grid-row: 2;
+padding: 40px;
 }
 #leftLinks {
     grid-column: 1/4;
@@ -151,6 +153,21 @@ padding: 20px;
         grid-template-columns: repeat(12,1fr);
     
     }
+    .welcome h3 {
+        grid-column: 1/12;
+        text-align: center;
+        grid-row: 1;
+    }
+    .welcome-text {
+    grid-column: 7/12;
+    grid-row: 2;
+    
+    }
+    .welcome-img {
+    grid-column: 2/7;
+    grid-row: 2;
+    padding: 0px;
+    }
     .services {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -192,6 +209,11 @@ padding: 20px;
     body {
         font-size: 18px;
     }
+    .welcome-img {
+        grid-column: 3/7;
+        grid-row: 2;
+        padding: 0px;
+        }
     .services {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
