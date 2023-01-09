@@ -1,7 +1,7 @@
 
 /* Variables*/
 :root {
-    --primary: #5E17EB;
+    --primary: #655586;
     --primedark:#08054b;
     --secondary: #A55A01;
     --accent: #B88A30;  
@@ -44,6 +44,10 @@ input, textarea{
 
 .site-nav {
     margin:  0 20px;
+    justify-content: space-around;
+    align-items: center
+    min-height 8vh;
+    background-color: var(--primary);
 }
 
 .welcome {
@@ -59,20 +63,15 @@ header {
     display: inline;
     padding: 5px;
 }
-.sectionHeading {
-    font-size: 2em;
-    margin-left: 35px;
-    margin-bottom: 0px;
-}
-.subheading {
-    font-size: 1.4em;
+
+.serviceSec {
+    background-color: #dddbff;
+    color: black;
 }
 .services {
     padding-left: 12px;;
 }
-.serviceSec h3 {
-    text-align: center;
-}
+
 
 
 /* Fonts*/
@@ -90,6 +89,27 @@ p,a,li{
 h1,h3 {
     font-size: 1.2em;
 }
+.serviceSec p {
+    color: black;
+}
+.serviceSec h2 {
+    color: black;
+    text-align: center;;
+}
+.serviceSec h3 {
+    color: var(--primary);
+    text-align: center;
+    font-weight: bold;
+}
+.sectionHeading {
+    font-size: 2em;
+    margin-left: 35px;
+    margin-bottom: 0px;
+}
+.subheading {
+    font-size: 1.4em;
+}
+
 /* mobile styles*/
 .grid{
     display: grid;
