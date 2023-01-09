@@ -8,7 +8,7 @@
 }
 /* Reset*/
 body,p,a,ul,li{
-    
+    font-size: 16px;
     margin: 00;
     padding: 0;
     text-decoration: none;
@@ -41,6 +41,12 @@ input, textarea{
     border-radius: 20px;
     border: 2px solid var(--accent);
 }
+
+.navLinks  li  {
+    display: inline;
+    padding: 5px;
+}
+
 /* Fonts*/
 @font-face {
     font-family: "Garamond";
@@ -62,6 +68,18 @@ h1,h3 {
     grid-template-columns: repeat(8,1fr);
 
 }
+#leftLinks {
+    grid-column: 1/4;
+}
+#leftLinks li {
+    float: left;
+}
+#rightLinks {
+    grid-column: 4/12;
+}
+#rightLinks li {
+    float: right;
+}
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -76,6 +94,11 @@ padding: 20px;
 }
 /* Small tablet styles*/
 @media screen and (min-width: 620px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    
+    }
     .services {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -93,6 +116,7 @@ padding: 20px;
 
 /* Large tablet styles*/
 @media screen and (min-width: 960px){
+
     body {
         font-size: 18px;
     }
@@ -132,16 +156,10 @@ padding: 20px;
 
 }
 
-.site-nav {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-}
 
 .navLinks  li  {
     display: inline;
- 
     padding: 10px;
-    color: red;
 }
 
 #leftLinks {
