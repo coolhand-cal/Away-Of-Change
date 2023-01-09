@@ -42,10 +42,38 @@ input, textarea{
     border: 2px solid var(--accent);
 }
 
+.site-nav {
+    margin:  0 20px;
+}
+
+.welcome {
+    padding: 0 20px 20px 20px;
+}
+
+header {
+    text-align: center;
+}
+.welcome h3 {
+    grid-column: 1/8;
+    text-align: center;
+    grid-row: 1;
+}
+.welcome-text {
+grid-row: 2;
+
+
+
+}
+.welcome-img {
+grid-row: 2;
+}
+
+
 .navLinks  li  {
     display: inline;
     padding: 5px;
 }
+
 
 /* Fonts*/
 @font-face {
@@ -92,6 +120,30 @@ background: grey;
 padding: 20px;
 
 }
+.requestForm {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    padding: 10px;   
+}
+.requestForm #subject {
+    grid-column: 1/5;
+    margin: 10px;
+}
+.requestForm #name {
+    grid-column: 1/5;
+    margin: 10px;
+}
+.requestForm #email {
+    grid-column: 1/5;
+    margin: 5px;
+}
+.requestForm #message {
+    grid-column: 1/5;
+    margin: 5px;
+}
+.requestForm button {
+    grid-column: 4;
+}
 /* Small tablet styles*/
 @media screen and (min-width: 620px){
     .grid{
@@ -110,6 +162,26 @@ padding: 20px;
     background: grey;
     padding: 20px;
     
+    }
+    .requestForm #name {
+        grid-column: 1/6;
+        margin: 10px;
+    }
+    .requestForm #email {
+        grid-column: 6/12;
+        margin: 10px;
+    }
+    .requestForm #message {
+        grid-column: 1/12;
+        margin: 5px;
+    }
+    .requestForm button {
+        grid-column: 6;
+    }
+    .welcome h3 {
+        grid-column: 1/12;
+        text-align: center;
+        grid-row: 1;
     }
 
 }
@@ -132,6 +204,19 @@ padding: 20px;
     padding: 20px;
     
     }
+    .requestForm #name {
+        grid-column: 1/6;
+        margin: 10px;
+    }
+    .requestForm #email {
+        grid-column: 6/11;
+        margin: 10px;
+    }
+    .requestForm #message {
+        grid-column: 1/11;
+        margin: 5px;
+    }
+   
 }
 
 /* desktop tablet styles*/

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class=" header">
+    <header>
         <nav class="site-nav grid">
             <section class="navLinks" id="leftLinks">
                 <ul>
@@ -25,14 +25,14 @@
             </section>
            
         </nav>
-        <h1 id="Main">Away Of Change Counseling Service</h1>
+        <h1>Away Of Change Counseling Service</h1>
         <P>place logo here along with adress, hours and contact info (include fax)</P>
         <p>hours: Mon-Fri 9am to 9pm , Sat appointment only, closed on Sundays</p>
         
-    </section>
-    <section id ="welcome">
+    </header>
+    <section class ="grid welcome">
+        <h3>"Breaking the chains of pain"</h3>
         <div class="welcome-text">
-            <h3>"Breaking the chains of pain"</h3>
             <section id="purpose" class="grid">
             <h4>Mission</h4>
             <p class="leading">mission statment and vision</p>
@@ -119,20 +119,23 @@
     <section id="Information Requests" >
         <h2>Information Requests</h2>
         <p>Form to request information</p>
-        <form>
-            <input type="text" placeholder="NAME">
-            <input type="email" placeholder="EMAIL">
-            <label for="subject">Select One</label>
-            <select name="subject" id="subject">
-                <option value="Eligibility">Eligibility</option>
-                <option value="Program">Program info</option>
-                <option value="general">General info</option>
-                <option value="appointments">Appointments</option>
-                <option value="services">receiving services</option>
-                <option value="other">other</option>
-            </select>
-            <textarea placeholder="YOUR MESSAGE"></textarea>
-            <button class="button">submit</button>
+        <form class="grid requestForm">
+            <section id="subject">
+                <label for="subject" >Subject</label>
+                <select name="subject" >
+                    <option value="general">General info</option>
+                    <option value="Eligibility">Eligibility</option>
+                    <option value="Program">Program info</option>
+                    <option value="appointments">Appointments</option>
+                    <option value="services">receiving services</option>
+                    <option value="other">other</option>
+                </select>
+            </section>
+           
+            <input type="text" id="name" placeholder="NAME">
+            <input type="email" id="email" placeholder="EMAIL">
+            <textarea id="message" placeholder="YOUR MESSAGE"></textarea>
+            <button id = "submit" class="button">submit</button>
         </form>
     </section>
     <section id="Footer">
