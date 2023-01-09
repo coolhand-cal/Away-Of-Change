@@ -81,4 +81,37 @@ h1,h3 {
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+   
+}
+.services a {
+text-align: center;
+background: grey;
+padding: 20px;
+
+}
+
+.site-nav {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.navLinks  li  {
+    display: inline;
+ 
+    padding: 10px;
+    color: red;
+}
+
+#leftLinks {
+    grid-column: 1/4;
+}
+#leftLinks li {
+    float: left;
+}
+#rightLinks {
+    grid-column: 7/12;
+}
+#rightLinks li {
+    float: right;
 }
