@@ -76,3 +76,9 @@ h1,h3 {
     }
     
 }
+
+/*grid test*/
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
