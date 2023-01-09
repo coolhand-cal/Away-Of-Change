@@ -59,6 +59,20 @@ header {
     display: inline;
     padding: 5px;
 }
+.sectionHeading {
+    font-size: 2em;
+    margin-left: 35px;
+    margin-bottom: 0px;
+}
+.subheading {
+    font-size: 1.4em;
+}
+.services {
+    padding-left: 12px;;
+}
+.serviceSec h3 {
+    text-align: center;
+}
 
 
 /* Fonts*/
