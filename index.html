@@ -5,82 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>\
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-    <section id="grid header">
+    <section class="grid header">
         <h1 id="Main">Away Of Change Counseling Service</h1>
         <P>place logo here along with adress, hours and contact info (include fax)</P>
         <p>hours: Mon-Fri 9am to 9pm , Sat appointment only, closed on Sundays</p>
-        <p> Navigation bar with links to other areas of site</p>
+         <nav class="site-nav grid">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#programReq"> Eligibility</a></li>
+            <li><a href="#patientRes">Patient Resources</A></li>
+            <li><a href="#Team">The Team</a></li>
+            <li><a href="#Connect">Connect</a></li> 
+        </ul>
+    </nav>
     </section>
-    <section id = intro>
-        <h3>Intro</h3>
-        <p>mission statment and vision</p>
-        <p>"Breaking the chains of pain"</p>
-        <p>a little paragraph about the company and our services</p>
+    <section id ="welcome" class="grid">
+        <div class="welcome-text">
+            <h3>"Breaking the chains of pain"</h3>
+            <section id="purpose" class="grid">
+            <h4></h4>
+            </section>
+            <p class="leading">mission statment and vision</p>
+            <h
+            <></p>
+            <p>a little paragraph about the company and our services</p>
+        </div>
+        <div class="welcome-img">
+            <img src="/assets/LOGO_TAKE1.png" alt="program logo">
+        </div>
+
     </section>
     <section id = "services">
         <h3>Services</h3>
-        <ul>
+        <ul class ="grid">
             <li>
                 <h3>Mental health counseling</h3>
                 <p>include description program hdirector and link to signup</p>
+                <button class="button">More Information</button>
+                <button class="button">Sign Up</button>
             </li>
             <li>
                 <h3>Psychiatric Rehabillitation</h3>
                 <p>include description program hdirector and link to signup</p>
+                <button class="button">More Information</button>
+                <button class="button">Sign Up</button>
             </li>
             <li>
                 <h3>Substance Abuse Management</h3>
-                <p>include both IOP and op Groups</p>
+                <p class="leading">include both IOP and op Groups</p>
                 <p>include description program hdirector and link to signup</p>
+                <button class="button">More Information</button>
+                <button class="button">Sign Up</button>
             </li>
             <li>
                 <h3>The Change Program</h3>
-                <p>include both A.I.P and S.E.A.P</p>
+                <p class="leading">include both A.I.P and S.E.A.P</p>
                 <p>include description program hdirector and link to signup</p>
+                <button class="button">More Information</button>
+                <button class="button">Sign Up</button>
             </li>
             <li>
                 <h3>Parole and Probation Compliance</h3>
                 <p>include description program hdirector and link to signup</p>
+                <button class="button">More Information</button>
+                <button class="button">Sign Up</button>
             </li>
             <li>
                 <h3>Medication MAmangement</h3>
                 <p>include description program hdirector and link to signup</p>
+                <button class="button">More Information</button>
+                <button class="button">Sign Up</button>
             </li>
             <li>
                 <h3>Psychiatric Evaluation</h3>
                 <p>include description program hdirector and link to signup</p>
+                <button class="button">More Information</button>
+                <button class="button">Sign Up</button>
             </li>
             <li>
                 <h3>DSS Parenting Compliance</h3>
                 <p>Services for those facing DSS cases. We offer parrenting classes and DSS compliance assistance</p>
+                <button class="button">More Information</button>
+                <button class="button">Sign Up</button>
             </li>
         </ul>
     </section>
     <section id="Program requirements">
-        <p>Include all elligibilioty requirements for each program</p>
+        <p class="leading">Include all elligibilioty requirements for each program</p>
     </section>
     <section id="New Inquiries">
         <h2>New Inquiries</h2>
         <p>self Screen told to help identify need</p>
-        <p>here should be info for how someone can signup for services and a form to submit. will go to intake coordinator when complete</p>
+        <p class="leading">here should be info for how someone can signup for services and a form to submit. will go to intake coordinator when complete</p>
     </section>
     <section id="Current Patients">
         <h2>Current Patients</h2>
         <p>urself info and resources for current clients</p>
-        <p>How to make appoinnments, update personal inforation</p>
+        <p class="leading">How to make appoinnments, update personal inforation</p>
         <p>office closures and rescheduling appointments</p>
     </section>
-    <section id="Information Requests">
+    <section id="Information Requests" class="grid">
         <h2>Information Requests</h2>
         <p>Form to request information</p>
+        <form>
+            <input type="text" placeholder="NAME">
+            <input type="email" placeholder="EMAIL">
+            <label for="subject">Select One</label>
+            <select name="subject" id="subject">
+                <option value="Eligibility">Eligibility</option>
+                <option value="Program">Program info</option>
+                <option value="general">General info</option>
+                <option value="appointments">Appointments</option>
+                <option value="services">receiving services</option>
+                <option value="other">other</option>
+            </select>
+            <textarea placeholder="YOUR MESSAGE"></textarea>
+            <button class="button">submit</button>
+        </form>
     </section>
     <section id="Footer">
         <h2>Footer</h2>
-        <p>fine print type stuff</p>
-        <p>Copyright information goes here along with links </p>
+        <p class="fineprint">fine print type stuff</p>
+        <p class=""> Copyright information goes here along with links </p>
     </section>
 </body>
 </html>

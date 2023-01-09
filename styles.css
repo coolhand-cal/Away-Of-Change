@@ -1,3 +1,78 @@
-#Main {
-    color: orange;
+
+/* Variables*/
+:root {
+    --primary: #5E17EB;
+    --primedark:#08054b;
+    --secondary: #A55A01;
+    --accent: #B88A30;  
+}
+/* Reset*/
+body,p,a,ul,li{
+    
+    margin: 00;
+    padding: 0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/* Base Styles*/
+body{
+    background-color: var(--secondary);
+    overflow-x: hidden;
+    font-family: Garamond; 
+}
+.button {
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6); 
+}
+.button:hover {
+    color:var(--primedark) ;
+    border-color:var(--primedark) ;
+}
+input, textarea{
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--accent);
+}
+/* Fonts*/
+@font-face {
+    font-family: "Garamond";
+    src: url(assets/fonts/EBGaramond-VariableFont_wght.ttf);
+}
+h1,h2,h3,h4 {
+    color: #dddbff;
+    font-weight: normal;
+}
+p,a,li{
+    color: 9893d8;
+}
+h1,h3 {
+    font-size: 1.2em;
+}
+/* mobile styles*/
+/* Small tablet styles*/
+@media screen and (min-width: 620px){
+
+}
+
+/* Large tablet styles*/
+@media screen and (min-width: 960px){
+    body {
+        font-size: 18px;
+    }
+}
+
+/* desktop tablet styles*/
+@media screen and (min-width: 1200px){  
+    body{
+        font-size: 20px;
+    }
+    
 }
