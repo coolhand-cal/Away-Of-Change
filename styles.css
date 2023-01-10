@@ -124,7 +124,6 @@ h1,h3 {
     grid-template-columns: repeat(8,1fr);
 
 }
-
 .burger div{
     width: 25px;
     height: 3px;
@@ -151,12 +150,25 @@ padding: 40px;
     grid-column: 1/4;
     padding: 5px;
 }
-
 #rightLinks {
-    grid-column: 4/12;
+    grid-column: 8/9;
+}
+
+#rightLinks ul {
+     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    right: 20px;
+    height: 92vh;
+    top:4vh;
+    background-color: var(--primary);
+    transform: translate(120%);
 }
 #rightLinks li {
     float: right;
+    opacity: 0;
 }
 .services {
     display: grid;
@@ -199,7 +211,7 @@ padding: 20px;
     .grid{
         display: grid;
         grid-template-columns: repeat(12,1fr);
-    
+     
     }
     .burger{
         display: none;
@@ -251,6 +263,22 @@ padding: 20px;
         text-align: center;
         grid-row: 1;
     }
+    #rightLinks ul{
+        display: inline;
+        flex-direction: row;
+        align-items: center;
+        width: 60vh;
+        right: 0px;
+        height: 0;
+        top:0;
+        background-color: var(--primary);
+        padding-right: 10px;
+        transform: translate(-10%);
+    }
+    #rightLinks li {
+        float: right;
+        opacity: 100;
+    }
 
 }
 
@@ -289,6 +317,11 @@ padding: 20px;
         grid-column: 1/11;
         margin: 5px;
     }
+    #rightLinks {
+
+        grid-column: 3/12;
+    }
+
    
 }
 
