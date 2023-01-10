@@ -125,6 +125,7 @@ header p {
 }
 .subheading {
     font-size: 1.4em;
+    letter-spacing: 1px;
 }
 
 #programReq .subheading {
@@ -232,8 +233,8 @@ padding: 20px;
     margin-bottom: 5px;
 }
 .services .wideImg {
-    width: 180px;
-    height: 130px;
+    width: 150px;
+    height: 100px;
     margin-bottom: 5px;
 }
 .services button {
@@ -299,6 +300,17 @@ padding: 20px;
     .services li {
         grid-column: span 4;
     }
+    .services .tallImg {
+        width: 125px;
+        height: 175px;
+        margin-bottom: 5px;
+    }
+    .services .wideImg {
+        width: 180px;
+        height: 130px;
+        margin-bottom: 5px;
+    }
+    
 
     .requestForm #name {
         grid-column: 1/6;
