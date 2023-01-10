@@ -162,7 +162,7 @@ padding: 40px;
     width: 80px;
     right: 20px;
     height: 24vh;
-    top:4vh;
+    top:3vh;
     background-color: var(--primary);
     transform: translate(0%);
     transition: transform 0.5s ease-in;
