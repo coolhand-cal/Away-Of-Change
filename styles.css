@@ -198,27 +198,43 @@ padding: 40px;
 
 
 /* services section*/
+/* note to self can clean up services grid using span instead of changing grid size*/
 
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 5px;
+    padding: 20px;
    
 }
 .services a {
 text-align: center;
-background: grey;
+background: var(--primary);
 padding: 20px;
 
 }
-
+.services ul {
+    display: flex;
+}
+.services li  {
+    padding: 10px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    
+}
 .services .tallImg {
     width: 125px;
     height: 175px;
+    margin-bottom: 5px;
 }
 .services .wideImg {
     width: 180px;
     height: 130px;
+    margin-bottom: 5px;
+}
+.services button {
+    margin-top: 10px;
 }
 .requestForm {
     display: grid;
@@ -273,14 +289,13 @@ padding: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
-       
     }
     .services a {
     text-align: center;
     background: grey;
     padding: 20px;
-    
     }
+
     .requestForm #name {
         grid-column: 1/6;
         margin: 10px;
