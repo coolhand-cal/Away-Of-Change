@@ -3,7 +3,7 @@
 :root {
     --primary: #655586;
     --primedark:#08054b;
-    --secondary: #A55A01;
+    --secondary: #ffaa42dc;
     --accent: #B88A30;  
 }
 /* Reset*/
@@ -127,6 +127,11 @@ header p {
     font-size: 1.4em;
 }
 
+#programReq .subheading {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
 /* mobile styles*/
 
 
@@ -201,11 +206,8 @@ padding: 40px;
 /* note to self can clean up services grid using span instead of changing grid size*/
 
 .services {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
     gap: 5px;
     padding: 20px;
-   
 }
 .services a {
 text-align: center;
@@ -217,6 +219,7 @@ padding: 20px;
     display: flex;
 }
 .services li  {
+    grid-column: span 4;
     padding: 10px;
     background: rgba(0,0,0,0.1);
     border-radius: 20px 20px 20px 20px;
@@ -286,14 +289,15 @@ padding: 20px;
     padding: 0px;
     }
     .services {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
     .services a {
     text-align: center;
     background: grey;
     padding: 20px;
+    }
+    .services li {
+        grid-column: span 4;
     }
 
     .requestForm #name {
@@ -351,16 +355,15 @@ padding: 20px;
         padding: 0px;
         }
     .services {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
-       
+        gap: 15px;    
     }
     .services a {
     text-align: center;
     background: grey;
     padding: 20px;
-    
+    }
+    .services li {
+        grid-column: span 3;
     }
     .requestForm #name {
         grid-column: 1/6;
