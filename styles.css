@@ -196,6 +196,9 @@ padding: 40px;
     margin-top: 0;
 }
 
+
+/* services section*/
+
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -207,6 +210,15 @@ text-align: center;
 background: grey;
 padding: 20px;
 
+}
+
+.services .tallImg {
+    width: 125px;
+    height: 175px;
+}
+.services .wideImg {
+    width: 180px;
+    height: 130px;
 }
 .requestForm {
     display: grid;
