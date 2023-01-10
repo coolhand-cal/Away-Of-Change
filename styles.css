@@ -43,10 +43,10 @@ input, textarea{
 }
 
 .site-nav {
-    margin:  0 20px;
+    margin:  0px;
     justify-content: space-around;
-    align-items: center
-    min-height 8vh;
+    align-items: center;
+    min-height: 4vh;
     background-color: var(--primary);
 }
 
@@ -56,6 +56,7 @@ input, textarea{
 
 header {
     text-align: center;
+    background-color: #dddbff;
 }
 
 
@@ -97,6 +98,14 @@ h1,h3 {
     font-size: 0.8em;
     
 }
+header h1 {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+header p {
+    color: black;
+}
 .serviceSec p {
     color: black;
 }
@@ -119,6 +128,10 @@ h1,h3 {
 }
 
 /* mobile styles*/
+
+
+/* header stuff*/
+
 .grid{
     display: grid;
     grid-template-columns: repeat(8,1fr);
@@ -170,11 +183,17 @@ padding: 40px;
 .rightLinks li {
     float: right;
 }
-.nav-active {
-   
-}
 .nav-active ul {
     display: flex;
+}
+
+
+/* banner image here*/
+
+.bannerImg {
+    width: 30%;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .services {
@@ -279,7 +298,7 @@ padding: 20px;
         height: 0;
         top:0;
         background-color: var(--primary);
-        padding-right: 10px;
+        padding-right: 20px;
         transform: translate(-0%);
     }
     .rightLinks {
