@@ -18,7 +18,7 @@ li{
 }
 /* Base Styles*/
 body{
-    background-color: var(--secondary);
+    background-color: var(--primary);
     overflow-x: hidden;
     font-family: Garamond; 
 }
