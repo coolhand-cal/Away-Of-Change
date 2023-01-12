@@ -126,11 +126,14 @@ header p {
 .subheading {
     font-size: 1.4em;
     letter-spacing: 1px;
-}
-
-#programReq .subheading {
+    text-decoration: underline;
     color: var(--secondary);
     font-weight: bold;
+}
+
+.leading {
+    color: #dddbff;
+    font-weight: 500;
 }
 
 /* mobile styles*/
@@ -150,20 +153,28 @@ header p {
     margin: 5px;
     grid-column: 9/12;
 }
+
+/* Mission and vision section*/
+
 .welcome h3 {
     grid-column: 1/8;
     text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
     grid-row: 1;
 }
-.welcome-text {
-grid-column: 1/8;
-grid-row: 3;
-
-}
 .welcome-img {
-grid-column: 3/8;
+grid-column: 1/7;
 grid-row: 2;
-padding: 40px;
+padding: 10px;
+}
+.mission {
+    grid-column: 1/9;
+    grid-row: 3;
+}
+.vision {
+    grid-column: 1/9;
+    grid-row: 4;
 }
 #leftLinks {
     grid-column: 1/4;
@@ -202,6 +213,15 @@ padding: 40px;
     margin-top: 0;
 }
 
+
+
+.welcome .wideImg {
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    
+border-radius: 20px 20px 20px 20px;
+}
 
 /* services section*/
 /* note to self can clean up services grid using span instead of changing grid size*/
@@ -280,21 +300,44 @@ padding: 20px;
     .burger{
         display: none;
     }
+    /* welcome section*/
     .welcome h3 {
         grid-column: 1/12;
         text-align: center;
         grid-row: 1;
     }
-    .welcome-text {
-    grid-column: 7/12;
-    grid-row: 2;
-    
-    }
+   
     .welcome-img {
-    grid-column: 2/7;
+    grid-column: 1/;
     grid-row: 2;
     padding: 0px;
+    margin-top: 30px;
     }
+    .welcome-img .wideImg {
+        width: 350px;
+    }
+   
+        .mission {
+            grid-column: 8/13;
+            grid-row: 2;
+            margin-left: auto;
+            padding-left: 15px;
+        }
+        .vision {
+            grid-column: 1/9;
+            grid-row: 3;
+            margin-top: 0;
+            transform: translateY(-50px);
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+        #leftLinks {
+            grid-column: 1/4;
+            padding: 5px;
+        }
+        .rightLinks {
+            grid-column: 8/9;
+        }
     .services {
         gap: 10px;
     }
