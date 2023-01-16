@@ -68,7 +68,7 @@ header {
     color: black;
 }
 #footer {
-background-color: var(--accent);
+background-color: goldenrod;
 }
 
 .services {
@@ -118,7 +118,6 @@ header p {
     color: black;
 }
 .serviceSec h2 {
-    color: black;
     text-align: center;;
 }
 .serviceSec h3 {
@@ -294,6 +293,36 @@ padding: 20px;
 #programReq {
     padding: 20px;
 }
+
+/*patients secton */
+#intake {
+    grid-column: span 12;
+    background: rgba(0,0,0,0.1);
+    margin: 10px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+#current {
+    grid-column: span 12;
+    background: rgba(0,0,0,0.1);
+    margin: 10px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.patients .button {
+    align-self: center;
+    text-align: center;
+}
+
+
+/* connect section*/
+#connect {
+    padding: 15px;
+    color: #dddbff;
+}
+
 .requestForm {
     display: grid;
     grid-template-columns: repeat(4,1fr); 
@@ -318,6 +347,8 @@ padding: 20px;
 .requestForm button {
     grid-column: 4;
 }
+
+
 /* Small tablet styles*/
 @media screen and (min-width: 620px){
     .grid{
@@ -473,6 +504,20 @@ padding: 20px;
     .services li {
         grid-column: span 3;
     }
+
+    /*patients secton */
+#intake {
+    grid-column: span 8;
+    background: rgba(0,0,0,0.1);
+    margin: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+#current {
+    grid-column: span 4;
+    background: rgba(0,0,0,0.1);
+    margin: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
     .requestForm #name {
         grid-column: 1/6;
         margin: 10px;
