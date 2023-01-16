@@ -149,6 +149,9 @@ header p {
     font-weight: 500;
     margin: 15px;
 }
+.fineprint {
+    color: black;
+}
 
 /* mobile styles*/
 
@@ -346,6 +349,20 @@ padding: 20px;
 }
 .requestForm button {
     grid-column: 4;
+}
+
+
+/* footer section*/
+
+.footerlinks ul {
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   color: black;
+
+}
+.footerlinks a {
+    color: black;
 }
 
 
