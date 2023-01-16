@@ -5,6 +5,7 @@
     --primedark:#08054b;
     --secondary: #ffaa42dc;
     --accent: #B88A30;  
+    --drkPurp: #560470;
 }
 /* Reset*/
 body,p,a,ul,li{
@@ -62,15 +63,21 @@ header {
 
 
 
-.serviceSec {
+.serviceSec , .patients{
     background-color: #dddbff;
     color: black;
 }
+#footer {
+background-color: var(--accent);
+}
+
 .services {
     padding-left: 12px;;
 }
 
-
+#programreq {
+    background-color: ;
+}
 
 
 /* Fonts*/
@@ -120,6 +127,7 @@ header p {
     font-weight: bold;
 }
 .sectionHeading {
+    color: var(--drkPurp);
     font-size: 2em;
     margin-left: 35px;
     margin-bottom: 0px;
@@ -135,6 +143,12 @@ header p {
 .leading {
     color: #dddbff;
     font-weight: 500;
+}
+
+.leadingAlt {
+    color: black;
+    font-weight: 500;
+    margin: 15px;
 }
 
 /* mobile styles*/
@@ -164,10 +178,12 @@ header p {
     margin-bottom: 0;
     grid-row: 1;
 }
-.welcome-img {
-grid-column: 1/7;
+.ceo-img {
+grid-column: 2/7;
 grid-row: 2;
 padding: 10px;
+margin-top: 15px;
+border-radius: 20px 20px 20px 20px;
 }
 .mission {
     grid-column: 1/9;
@@ -175,8 +191,14 @@ padding: 10px;
 }
 .vision {
     grid-column: 1/9;
-    grid-row: 4;
+    grid-row: 5;
 }
+.welcome-img {
+    grid-column: 1/7;
+    grid-row: 4;
+    padding: 10px;
+    margin-top: 15px;
+    }
 #leftLinks {
     grid-column: 1/4;
     padding: 5px;
@@ -214,14 +236,18 @@ padding: 10px;
     margin-top: 0;
 }
 
-
-
 .welcome .wideImg {
     text-align: center;
     width: 400px;
     height: 250px;
     
 border-radius: 20px 20px 20px 20px;
+}
+.welcome .tallImg {
+    text-align: center;
+    width: 250px;
+    height: 325px;
+    
 }
 
 /* services section*/
@@ -302,35 +328,44 @@ padding: 20px;
     .burger{
         display: none;
     }
+
+    body,p,a,ul,li{
+        font-size: 18px;
+     
+    }
     /* welcome section*/
     .welcome h3 {
         grid-column: 1/12;
         text-align: center;
         grid-row: 1;
     }
-   
+    .ceo-img{
+        grid-row: 2;
+    }
+
     .welcome-img {
-    grid-column: 1/;
-    grid-row: 2;
+    grid-column: 8/11;
+    grid-row: 3;
     padding: 0px;
     margin-top: 30px;
     }
     .welcome-img .wideImg {
-        width: 350px;
+        width: 300px;
+
     }
    
         .mission {
-            grid-column: 8/13;
+            grid-column: 7/13;
             grid-row: 2;
             margin-left: auto;
             padding-left: 15px;
         }
         .vision {
-            grid-column: 1/9;
+            grid-column: 1/8;
             grid-row: 3;
             margin-top: 0;
             transform: translateY(-50px);
-            padding: 0px;
+            padding: 15px;
             margin-bottom: 0px;
         }
         #leftLinks {
@@ -409,13 +444,23 @@ padding: 20px;
 /* Large tablet styles*/
 @media screen and (min-width: 960px){
 
-    body {
-        font-size: 18px;
+    body,p,a,ul,li{
+        font-size: 20px;
+     
     }
     .welcome-img {
-        grid-column: 3/7;
-        grid-row: 2;
+        grid-column: /12;
+        grid-row: 3;
         padding: 0px;
+        }
+
+        .welcome .wideImg {
+            width: 375px;
+            height: 300px;
+        }
+        .welcome .tallImg {
+            width: 300px;
+            height: 400px;
         }
     .services {
         gap: 15px;    
@@ -447,8 +492,9 @@ padding: 20px;
 
 /* desktop tablet styles*/
 @media screen and (min-width: 1200px){  
-    body{
-        font-size: 20px;
+    body,p,a,ul,li{
+        font-size: 22px;
+     
     }
     
 }
