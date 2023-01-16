@@ -71,7 +71,7 @@
                 <p>Mental Health includes our emotional, psychological, and social well being.
                      Therapy services can assist you by providing support and better equipping
                       you to face the challenges of life. </p>
-                <button class="button">More Information</button>
+                <button class="button info-btn">More Information</button>
                 <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
@@ -80,7 +80,7 @@
                 <p>Our psychiatric rehabilitation program is designed for those whose mental
                 health condition makes it difficult to succesfuly integrate into the community
                  and need additional support</p>
-                <button class="button">More Information</button>
+                <button class="button info-btn">More Information</button>
                 <button class="button signup-btn">Sign Up</button>
             </li>
         
@@ -91,7 +91,7 @@
                     and determine the most effective combination of counseling and medication management services 
                     to minimize the impact on daily living.
                 </p>
-                <button class="button">More Information</button>
+                <button class="button info-btn">More Information</button>
                 <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
@@ -100,7 +100,7 @@
                 <p>Psychotropic medication management for those With 
                     diagnosed mental health conditions. Qualified professionals ensure appropriate dosage is recieved
                 and monitor for compliance and effectiveness.</p>
-                <button class="button">More Information</button>
+                <button class="button info-btn">More Information</button>
                 <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
@@ -110,7 +110,7 @@
                     it consists of: (S.E.A.P) The Social and Emotional Awareness Program 
                     Aiming to Increase social awareness and emotional intelligence as well as
                     (A.I.P) The abuse intervention Program focuses on eliminating domestic violence by increasing awareness and Accountibility</p>
-                  <button class="button">More Information</button>
+                  <button class="button info-btn">More Information</button>
                 <button class="button signup-btn">Sign Up</button>
             </li>
             
@@ -120,7 +120,7 @@
                 <p>Away of Change provides substance use services including both intensive outpatient programs
                 (IOP) and outpatient programs (OP) , As well as Suboxone maintenance. We have experienced professionals
                  and curriculums designed to reduce or eliminate drug use.</p>
-                <button class="button">More Information</button>
+                <button class="button info-btn">More Information</button>
                 <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
@@ -129,7 +129,7 @@
                 <p>We provide a variety of services for those who have been mandated by the court and need to remain compliant.
                     Services include anger management, gambling counseling, substance use treatment and more.
                 </p>
-                <button class="button">More Information</button>
+                <button class="button info-btn">More Information</button>
                 <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
@@ -137,7 +137,7 @@
                 <img src="assets/images/dssImg.jpg" alt="whole family" class="tallImg">
                 <p>Services for those facing DSS cases. We offer parrenting classes and DSS compliance assistance
                     . Our Goal is to to help keep families together in happy homes</p>
-                <button class="button">More Information</button>
+                <button class="button info-btn">More Information</button>
                 <button class="button signup-btn">Sign Up</button>
             </li>
         </ul>
@@ -160,7 +160,7 @@
                 positioned to meet their needs. </p>
                 <p class="leadingAlt">Click the button below and schedule your intake today.</p>
                
-                <button class="button signup-btn" > Schedule intake</button>
+                <button class="button  signup-btn" > Schedule intake</button>
                 
                 <p class="leadingAlt">To begin services applicants must possess a valid ID, social security card, and proof of active insurance.
                      Please bring these items to your intake apportionment or be prepared to email a copy of completing a virtual 
@@ -172,7 +172,7 @@
                  goes 30 days without a session he/she will be considered inactive. If a patient remains inactive for more than 30 
                  days he/she will be discharged from the program and required to complete a new intake before resuming services. 
             </p><p class="leadingAlt">Click the button below and schedule an appointment now. </p>
-            <button class="button"> Schedule Appointment</button>
+            <button class="button aptoggle-btn"> Schedule Appointment</button>
         </section>
     </div>
    
@@ -209,7 +209,7 @@
         </nav>
     </section>
 
-<!--modal section-->
+<!--sign up modal section-->
 <div class="bg-modal">
   <div class="modal-content">
     <img src="assets/images/AWOC_LOGO.png" alt="away of change logo " class="modal-img">
@@ -245,20 +245,70 @@
             </section>
             <br>
             <input type="text" name="firstname" id="firstname" placeholder="FIRST NAME" required>
-            <br>
+         
             <input type="text" name="lastname" id="lastname" placeholder="LAST NAME" required>
             <br><label for="birthday" >D.O.B:</label>
             <input type="date" name="birthday" id="birthday" value="1992-05-11" required/>
+            <br>
             <input type="insuranceCompany" name="insurance" id="insurance" placeholder="INSURANCE COMPANY" required>
             <input type="PolicyNum" name="policyNum" id="policyNum" placeholder="POLICY NUMBER" required>
             <input type="email" name="email" id="email" placeholder="EMAIL" required >
             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="PHONE (XXX-XXX-XXXX)">
-            <button class="button close-btn" > Cancel</button>
+            <button class="button bgclose-btn" > Cancel</button>
             <button id = "submit" class="button">submit</button>
         </form>
     </div>
   </div>  
 </div>
+
+<!--appointment modal section-->
+<div class="appt-modal">
+    <div class="modal-content">
+      <img src="assets/images/AWOC_LOGO.png" alt="away of change logo " class="modal-img">
+      <div class="apptForm" id="popup-2">
+          <form method="post" action="https://formsubmit.co/workachieveprogress@gmail.com" >
+              <section id="provider">
+                  <label for="provider" >Select provider:</label>
+                  <select name="provider" required>
+                      <option value="Doris-Allen">Doris Allen</option>
+                      <option value="Doris-Iwuh">Doris Iwuh</option>
+                      <option value="Dr. Vincent">Dr Vincent</option>
+                      <option value="Agatha Okempka">Agatha Okempka</option>
+                      <option value="Keith Holley">Keith Holley</option>
+                      <option value="other">other</option>
+                  </select>
+                  <br><label for="appt-date" >Appointment Date:</label>
+                  <input type="date" name="appt-date" id="appt-date" value="2023-01-11" required/>
+                  <br>
+                  <label for="appt-time" >Appointment Time:</label>
+                  <input type="time" name="appt-time" id="appt-time" required>
+              </section>
+              <section id="checklist">
+                  <div>
+                      <input type="checkbox" name="haveIntake" id="haveIntake" required />
+                      <label for="haveId">Have you already competed an intake</label>
+                  </div>
+                  <div>
+                      <input type="checkbox" name="areActive" id="areActve" required />
+                      <label for="areActive">have you attended at least 1 apointment in the last 60 days</label>
+                  </div>
+              </section>
+              <br>
+              <input type="text" name="firstname" id="firstname" placeholder="FIRST NAME" required>
+              <input type="text" name="lastname" id="lastname" placeholder="LAST NAME" required>
+              <br>
+              <input type="text" name="mr-num" id="mr-num" placeholder="medical record number XXX-X" >
+              <br>
+              <input type="email" name="email" id="email" placeholder="EMAIL" required >
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="PHONE (XXX-XXX-XXXX)">
+              <button class="button aptoggle-btn" > Cancel</button>
+              <button id = "submit" class="button">submit</button>
+          </form>
+      </div>
+    </div>  
+  </div>
+
+
     <script src="app.js"></script>
 </body>
 </html>
