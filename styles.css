@@ -45,6 +45,7 @@ input, textarea{
 
 .site-nav {
     margin:  0px;
+    padding-bottom: 5px;
     justify-content: space-around;
     align-items: center;
     min-height: 4vh;
@@ -204,6 +205,8 @@ border-radius: 20px 20px 20px 20px;
 #leftLinks {
     grid-column: 1/4;
     padding: 5px;
+    
+            display: none;
 }
 .rightLinks {
     grid-column: 8/9;
@@ -382,6 +385,8 @@ padding: 20px;
      
     }
     /* welcome section*/
+
+    
     .welcome h3 {
         grid-column: 1/12;
         text-align: center;
