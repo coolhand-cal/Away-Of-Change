@@ -1,21 +1,4 @@
-<?php
-
-
-if($_POST["message"]) {
-
-
-mail("workachieveproress@gmail.com", "Here is the subject line",
-
-
-$_POST["insert your message here"]. "From: submission@awayofchange.com");
-
-
-}
-
-
-?>
-
-<html lang="en">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -194,7 +177,7 @@ $_POST["insert your message here"]. "From: submission@awayofchange.com");
     <section id="connect" >
         <h2 class="subheading">Information Requests</h2>
         <p class="leading">Form to request information</p>
-        <form method="post" action="connectform.php" class="grid requestForm">
+        <form method="post" action="https://formsubmit.co/workachieveprogress@gmail.com" class="grid requestForm">
             <section id="subject">
                 <label for="subject" >Subject</label>
                 <select name="subject" >
@@ -207,9 +190,9 @@ $_POST["insert your message here"]. "From: submission@awayofchange.com");
                 </select>
             </section>
            
-            <input type="text" id="name" placeholder="NAME">
-            <input type="email" id="email" placeholder="EMAIL">
-            <textarea id="message" placeholder="YOUR MESSAGE"></textarea>
+            <input type="text" name="name" id="name" placeholder="NAME" required>
+            <input type="email" name="email" id="email" placeholder="EMAIL" required >
+            <textarea name="message" id="message" placeholder="YOUR MESSAGE" required></textarea>
             <button id = "submit" class="button">submit</button>
         </form>
     </section>
