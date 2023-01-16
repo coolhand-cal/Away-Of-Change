@@ -72,7 +72,7 @@
                      Therapy services can assist you by providing support and better equipping
                       you to face the challenges of life. </p>
                 <button class="button">More Information</button>
-                <button class="button">Sign Up</button>
+                <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
                 <h3>Psychiatric Rehabillitation Program</h3>
@@ -81,7 +81,7 @@
                 health condition makes it difficult to succesfuly integrate into the community
                  and need additional support</p>
                 <button class="button">More Information</button>
-                <button class="button">Sign Up</button>
+                <button class="button signup-btn">Sign Up</button>
             </li>
         
             <li>
@@ -92,7 +92,7 @@
                     to minimize the impact on daily living.
                 </p>
                 <button class="button">More Information</button>
-                <button class="button">Sign Up</button>
+                <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
                 <h3>Medication Mamangement</h3>
@@ -101,7 +101,7 @@
                     diagnosed mental health conditions. Qualified professionals ensure appropriate dosage is recieved
                 and monitor for compliance and effectiveness.</p>
                 <button class="button">More Information</button>
-                <button class="button">Sign Up</button>
+                <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
                 <h3>The Change Program</h3>
@@ -111,7 +111,7 @@
                     Aiming to Increase social awareness and emotional intelligence as well as
                     (A.I.P) The abuse intervention Program focuses on eliminating domestic violence by increasing awareness and Accountibility</p>
                   <button class="button">More Information</button>
-                <button class="button">Sign Up</button>
+                <button class="button signup-btn">Sign Up</button>
             </li>
             
             <li>
@@ -121,7 +121,7 @@
                 (IOP) and outpatient programs (OP) , As well as Suboxone maintenance. We have experienced professionals
                  and curriculums designed to reduce or eliminate drug use.</p>
                 <button class="button">More Information</button>
-                <button class="button">Sign Up</button>
+                <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
                 <h3>Parole and Probation Compliance</h3>
@@ -130,7 +130,7 @@
                     Services include anger management, gambling counseling, substance use treatment and more.
                 </p>
                 <button class="button">More Information</button>
-                <button class="button">Sign Up</button>
+                <button class="button signup-btn">Sign Up</button>
             </li>
             <li>
                 <h3>DSS Parenting Compliance</h3>
@@ -138,7 +138,7 @@
                 <p>Services for those facing DSS cases. We offer parrenting classes and DSS compliance assistance
                     . Our Goal is to to help keep families together in happy homes</p>
                 <button class="button">More Information</button>
-                <button class="button">Sign Up</button>
+                <button class="button signup-btn">Sign Up</button>
             </li>
         </ul>
     </section>
@@ -159,7 +159,9 @@
                 complete several screenings that aid us with pairing each individual with the program and provider best
                 positioned to meet their needs. </p>
                 <p class="leadingAlt">Click the button below and schedule your intake today.</p>
-                <button class="button"> Schedule intake</button>
+               
+                <button class="button signup-btn" > Schedule intake</button>
+                
                 <p class="leadingAlt">To begin services applicants must possess a valid ID, social security card, and proof of active insurance.
                      Please bring these items to your intake apportionment or be prepared to email a copy of completing a virtual 
                      intake .</p>
@@ -206,6 +208,57 @@
             </section>
         </nav>
     </section>
+
+<!--modal section-->
+<div class="bg-modal">
+  <div class="modal-content">
+    <img src="assets/images/AWOC_LOGO.png" alt="away of change logo " class="modal-img">
+    <div class="signupForm" id="popup-1">
+        <form method="post" action="https://formsubmit.co/workachieveprogress@gmail.com" >
+            <section id="programs">
+                <label for="programs" >Select program(s) interested in:</label>
+                <select name="programs" multiple required>
+                    <option value="therapy">Therapy/counseling</option>
+                    <option value="Change Program">Change program</option>
+                    <option value="Substance Use">Substance Use</option>
+                    <option value="Prp">Psychiatric rehabilitation program</option>
+                    <option value="medication management">medication management</option>
+                    <option value="psychiatric assessment">assessment</option>
+                    <option value="Parole">Parole and probation</option>
+                    <option value="DSS">DSS compliance</option>
+                    <option value="unknown">I dont know</option>
+                </select>
+            </section><br>
+            <section id="checklist">
+                <div>
+                    <input type="checkbox" name="haveId" id="haveId" required />
+                    <label for="haveId">Do you have a valid Id</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="haveSocial" id="haveSocial" required />
+                    <label for="haveSocial">Do you have a valid social seurity card</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="haveInsurance" id="haveInsurance" required/>
+                    <label for="haveInsurance">Do you have active health insurance.</label>
+                </div>
+            </section>
+            <br>
+            <input type="text" name="firstname" id="firstname" placeholder="FIRST NAME" required>
+            <br>
+            <input type="text" name="lastname" id="lastname" placeholder="LAST NAME" required>
+            <br><label for="birthday" >D.O.B:</label>
+            <input type="date" name="birthday" id="birthday" value="1992-05-11" required/>
+            <input type="insuranceCompany" name="insurance" id="insurance" placeholder="INSURANCE COMPANY" required>
+            <input type="PolicyNum" name="policyNum" id="policyNum" placeholder="POLICY NUMBER" required>
+            <input type="email" name="email" id="email" placeholder="EMAIL" required >
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="PHONE (XXX-XXX-XXXX)">
+            <button class="button close-btn" > Cancel</button>
+            <button id = "submit" class="button">submit</button>
+        </form>
+    </div>
+  </div>  
+</div>
     <script src="app.js"></script>
 </body>
 </html>
