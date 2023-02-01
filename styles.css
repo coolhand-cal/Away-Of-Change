@@ -291,6 +291,7 @@ padding: 20px;
     grid-column: 4;
 }
 /* Small tablet styles*/
+
 @media screen and (min-width: 620px){
     .grid{
         display: grid;
@@ -300,6 +301,11 @@ padding: 20px;
     .burger{
         display: none;
     }
+
+    /* Fonts*/
+body,p,a,ul,li{
+    font-size: 20px;
+}
     /* welcome section*/
     .welcome h3 {
         grid-column: 1/12;
@@ -407,8 +413,8 @@ padding: 20px;
 /* Large tablet styles*/
 @media screen and (min-width: 960px){
 
-    body {
-        font-size: 18px;
+    body,p,a,ul,li{
+        font-size: 25px;
     }
     .welcome-img {
         grid-column: 3/7;
